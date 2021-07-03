@@ -17,10 +17,10 @@ formEl.onsubmit = function(e) {
   // save textarea's content to localstorage
   // YOUR CODE HERE
   document.cookie = "nameSpan" + "'s Notes"
-  nameSpan.textcontent = this.name
+  nameSpan.textContent = span
   textarea = formEl.value
   localStorage.setItem('notes', textarea)
-  formEl.textcontent = textarea
+  formEl.textContent = textarea
 
 
 
@@ -32,6 +32,9 @@ clear.onclick = function() {
   // Clear textarea's value
   // Clear localstorage's content
   // YOUR CODE HERE
+  formEl.innerHTML = ""
+  localStorage.setItem("notes","")
+
 
   // triggers thumbs up animation
   this.classList.add('emoji')
