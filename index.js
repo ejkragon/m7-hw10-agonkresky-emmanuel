@@ -7,7 +7,10 @@ var textarea = document.querySelector('textarea')
 // Retrieve name and note content from cookies and localstorage
 // Then apply them to elements on the page
 // YOUR CODE HERE
-var contentEditable = localStorage.getItem('span')
+var nameArea = nameSpan.textContent
+document.cookie = nameArea
+nameSpan.textContent = nameArea
+
 var notesArea = localStorage.getItem('notes')
 
 formEl.onsubmit = function(e) {
@@ -16,14 +19,15 @@ formEl.onsubmit = function(e) {
   // save name element's content to cookies
   // save textarea's content to localstorage
   // YOUR CODE HERE
-  contentEditable = nameSpan.innerHTML
-  document.cookie = contentEditable
-  nameSpan.textContent = contentEditable
-  console.log(contentEditable)
+  var nameArea = document.cookie
+  nameSpan.textContent = nameArea
+  var nameArea = document.getElementById('span').textContent=nameArea
+  //need js to write over span element
+  console.log(nameArea)
 
   notesArea = textarea.value
   localStorage.setItem('notes', notesArea)
-  formEl.textContent = notesArea
+  // formEl.textContent = notesArea
   console.log(notesArea)
 
 
