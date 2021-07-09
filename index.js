@@ -11,14 +11,6 @@ var textarea = document.querySelector('textarea')
 var nameArea = nameSpan.textContent 
 document.cookie = nameArea
 
-//Your Name saves as cookie and displays in span
-// var nameArea = nameSpan.textContent
-// document.cookie = nameSpan.textContent
-// 
-// var nameArea = nameSpan.textContent
-// document.cookie = nameArea
-// nameSpan.textContent = nameArea
-
 var notesArea = localStorage.getItem('notes')
 
 formEl.onsubmit = function(e) {
@@ -32,25 +24,12 @@ formEl.onsubmit = function(e) {
   console.log("nameArea: " + nameArea) 
   console.log("nameSpan.textContent: " + nameSpan.textContent)
   console.log("document.cookie: " + document.cookie)
-  //nameSpan.textContent = nameArea
-  //nameArea = document.cookie
-  //console.log(nameArea)
-
-
-  // Your Name saves as cookie and displays in span
-  // if i put nameArea = document.cookie, Your Name displays as cookie
-  // nameSpan.textContent = document.cookie displays Your Name (not new name)
-    //  var nameArea = nameSpan.textContent
-    //  nameSpan.textContent = document.cookie 
-    //  console.log(nameSpan.textContent)
-
+    
   notesArea = textarea.value
   localStorage.setItem('notes', notesArea)
   // formEl.textContent = notesArea
   console.log(notesArea)
   console.log(textarea.value)
-
-
 
   // triggers thumbs up animation
   this.elements.save.classList.add('emoji')
