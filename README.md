@@ -1,5 +1,15 @@
 # Note taking app
 
+
+## Resources used other than Lee's lecture notes 
+
+1. https://www.w3schools.com/js/js_cookies.asp
+2. https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
+3. https://www.tutorialrepublic.com/javascript-tutorial/javascript-cookies.php
+4. https://www.geeksforgeeks.org/javascript-change-the-text-of-a-span-element/
+
+
+
 &nbsp;
 ## Background
 
