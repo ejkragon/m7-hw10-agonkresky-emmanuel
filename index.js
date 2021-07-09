@@ -8,7 +8,7 @@ var textarea = document.querySelector('textarea')
 // Then apply them to elements on the page
 // YOUR CODE HERE
 
-var nameArea = nameSpan.textContent
+var nameArea = nameSpan.textContent 
 document.cookie = nameArea
 
 //Your Name saves as cookie and displays in span
@@ -29,7 +29,7 @@ formEl.onsubmit = function(e) {
   // YOUR CODE HERE
   document.cookie = nameSpan.textContent
   console.log("nameSpan: " + nameSpan)
-  console.log("nameArea: " + nameArea)
+  console.log("nameArea: " + nameArea) 
   console.log("nameSpan.textContent: " + nameSpan.textContent)
   console.log("document.cookie: " + document.cookie)
   //nameSpan.textContent = nameArea
@@ -48,6 +48,7 @@ formEl.onsubmit = function(e) {
   localStorage.setItem('notes', notesArea)
   // formEl.textContent = notesArea
   console.log(notesArea)
+  console.log(textarea.value)
 
 
 
@@ -60,6 +61,7 @@ clear.onclick = function() {
   // Clear localstorage's content
   // YOUR CODE HERE
   // formEl.innerHTML = ""
+  textarea.value = ""
   localStorage.setItem("notes","")
 
 
